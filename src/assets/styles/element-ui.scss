@@ -1,0 +1,344 @@
+.el-scrollbar {
+  .el-select-dropdown__item.selected {
+    color: #3350d4 !important;
+  }
+}
+
+.el-loading-mask {
+  background: rgba($color: #000000, $alpha: 0.7) !important;
+}
+
+//下拉框
+.group-select-option {
+  background: #1f2955 !important;
+  border: none;
+
+  .el-select-dropdown__item {
+    color: #fff;
+    opacity: 0.6;
+  }
+
+  .el-select-dropdown__item.selected {
+    color: #fff !important;
+    opacity: 1;
+  }
+
+  .el-select-dropdown__item:hover {
+    background: #3C4984 !important;
+  }
+
+  .el-select-dropdown__item.hover,
+  .el-select-dropdown__item:hover {
+    background: #3C4984 !important;
+  }
+
+  .popper__arrow {
+    border-bottom-color: #1f2955 !important;
+  }
+
+  .popper__arrow:after {
+    top: 0;
+    border-bottom-color: #1f2955 !important;
+  }
+}
+
+
+//日期组件
+.group-select-picker {
+  border-radius: 4px !important;
+  background-color: #1f2955;
+  border: none;
+  color: #ffffff;
+
+  .el-date-table td.disabled div {
+    color: #C0C4CC;
+    opacity: 0.3;
+  }
+
+  .el-date-table td.disabled div {
+    background: none;
+  }
+
+  .el-range-input {
+    color: #ffffff;
+    background-color: #1f2955;
+  }
+
+  .el-date-picker__header-label {
+    color: #ffffff;
+  }
+
+  .popper__arrow {
+    border-bottom-color: #1f2955 !important;
+  }
+
+  .popper__arrow:after {
+    top: 0;
+    border-bottom-color: #1f2955 !important;
+  }
+
+  .el-range-separator {
+    color: #ffffff;
+  }
+
+  .el-date-range-picker__content.is-left {
+    border-right: 1px solid #50587A !important;
+  }
+
+  .el-date-table th {
+    color: #ffffff;
+    border-bottom: solid 1px #50587A !important;
+  }
+
+  .el-picker-panel__icon-btn {
+    color: #ffffff;
+  }
+
+  .el-month-table td .cell {
+    color: #ffffff;
+  }
+
+  .el-month-table td.today .cell {
+    color: #409EFF;
+    font-weight: 700;
+  }
+
+  .el-month-table td.disabled .cell {
+    color: #C0C4CC;
+    opacity: 0.3;
+    background: none;
+  }
+
+  .el-year-table td .cell {
+    color: #ffffff;
+  }
+
+  .el-year-table td.today .cell {
+    color: #409EFF;
+    font-weight: 700;
+  }
+
+  .el-year-table td.disabled .cell {
+    color: #C0C4CC;
+    opacity: 0.3;
+    background: none;
+  }
+
+  .el-date-table td.in-range div {
+    background-color: #3c4984 !important;
+  }
+
+  // .el-picker-panel__icon-btn:hover {
+  //   color: #409EFF!important;
+  // }
+  // .next-month,.prev-month {
+  //   color: #ffffff!important;
+  //   opacity: 0.3;
+  // }
+  // .el-date-table td.in-range div, .el-date-table td.in-range div:hover, .el-date-table.is-week-mode .el-date-table__row.current div, .el-date-table.is-week-mode .el-date-table__row:hover div {
+  //   background: #3C4984;
+  // }
+}
+
+//分页器组件
+.group-el-pagination.el-select-dropdown {
+  background-color: #1f2955;
+  color: #ffffff;
+  border: 0;
+}
+
+.group-el-pagination {
+  .el-select-dropdown__item {
+    color: #fff;
+    opacity: 0.6;
+  }
+
+  .el-select-dropdown__item.hover,
+  .el-select-dropdown__item:hover {
+    background: #3C4984;
+  }
+
+  .el-scrollbar .el-select-dropdown__item.selected {
+    color: #ffffff !important;
+    opacity: 1;
+  }
+
+  .popper__arrow {
+    border-bottom-color: #1f2955 !important;
+  }
+
+  .popper__arrow:after {
+    border-top-color: #1f2955 !important;
+    border-bottom-color: #1f2955 !important;
+  }
+
+  // 分页箭头  1f2955
+  .el-popper[x-placement^=bottom] .popper__arrow::after {
+    border-top-color: #3C4984 !important;
+    border-bottom-color: #3C4984 !important;
+  }
+
+  .el-popper[x-placement^=top] .popper__arrow::after {
+    border-top-color: #3C4984 !important;
+    border-bottom-color: #3C4984 !important;
+  }
+}
+
+//tooltip
+.group-tooltip.el-tooltip__popper.is-dark {
+  background: rgba($color: #303133, $alpha: 0.7);
+  font-size: 12px;
+}
+
+//loading 
+.el-loading-parent--relative {
+  position: static !important;
+}
+
+.group-overview-container {
+  min-height: 860px;
+
+  //button 组合
+  .el-button-group {
+    .el-button--primary {
+      background-color: #1f2955 !important;
+      border: 0 !important;
+      color: #ffffff;
+      opacity: 0.6;
+      font-weight: 400;
+
+      &:hover {
+        color: #3350d4;
+        opacity: 1;
+      }
+
+      &.active {
+        background-color: #3350d4 !important;
+        opacity: 1;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  //下拉框
+  .el-select {
+    .el-input__inner {
+      background-color: #1f2955;
+      background-image: none;
+      border-radius: 4px;
+      border: 0;
+      box-sizing: border-box;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #28356E;
+      }
+    }
+  }
+
+  //多选框
+  .el-checkbox {
+    .el-checkbox__label {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .el-checkbox__inner {
+      background-color: #1f2955;
+      border: 0;
+    }
+
+    .el-checkbox__input.is-checked .el-checkbox__inner {
+      background-color: #3350d4 !important;
+    }
+  }
+
+  //input
+  .el-input {
+    width: 160px;
+
+    .el-input__inner {
+      background-color: #1f2955;
+      border: none;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #28356E;
+      }
+    }
+
+    .el-input__icon {
+      font-size: 17px;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.data-overview-container {
+
+  //button 组合
+  .el-button-group {
+    .el-button--primary {
+      background-color: #ffffff !important;
+      border: 1px solid #E1E3E4 !important;
+      color: #333333;
+      font-weight: 400;
+
+      &:hover {
+        color: #3350d4;
+      }
+
+      &.active {
+        background-color: #3350D4 !important;
+        color: #ffffff;
+        border: 1px solid #3350D4 !important;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .el-input {
+    width: 160px;
+
+    .el-input__inner {
+      background-color: #fff;
+      border: 1px solid #E1E3E4;
+      color: #333;
+    }
+
+    .el-input__icon {
+      font-size: 17px;
+      cursor: pointer;
+    }
+  }
+
+  .t-c {
+    color: #333333;
+  }
+}
+
+.export-btn.el-button--primary {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  background-color: #3350d4;
+  border-color: #3350d4;
+}
+
+// 表格查看按钮的字体颜色
+.action-list {
+  text-align: left;
+
+  .el-button--text {
+    color: #18ABFE;
+    padding: 0 !important;
+  }
+}

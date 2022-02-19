@@ -1,0 +1,40 @@
+/*
+ * @Descripttion: 全局颜色样式
+ * @version: 在vue.config.js中全局注册，可在全局css中直接使用
+ * @Author: JTune
+ * @Date: 2020-10-20 14:08:00
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-02-23 15:56:00
+ */
+
+// 主题色
+$color-red: #ff3d57;
+$color-purple: #ff33a9;
+$color-orange: #ffa820;
+$color-blue: #19abfe;
+
+// 文字色
+$text-black: #000;
+$text-dark: #333;
+$text-deep: #555;
+$text-pl: #999999;
+$text-weak: #b3b3b3;
+$text-white: #fff;
+$text-red: #ff3d57;
+$text-purple: #ff33a9;
+$text-orange: #ffa81f;
+$text-blue: #22cce2;
+
+// 背景色
+$bg-theme-box: #07083f;
+$group-item-bg: #131d4a;
+$data-item-bg: #ffffff;
+$wind-item-bg: #060c23;
+$bg-blue: #3351d4;
+$bg-dark: #202a56;
+$bg-bar: #f9f9f9;
+$bg-page: #f3f3f3;
+$bg-page-light: #f9f9f9;
+
+//border
+$border-blue: #4ecfff;

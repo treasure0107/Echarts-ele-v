@@ -1,0 +1,134 @@
+@import "./config.scss";
+$moreTime: .3s;
+
+#app {
+    width: 100%;
+    // height: calc(100vh - 60px);
+    height: 100%;
+    padding: 0 0;
+    margin: 0 0;
+    background-color: #fff;
+    font-family: "Helvetica Neue", "Hiragino Sans GB", stheiti, "Microsoft Yahei", "微软雅黑", tahoma, sans-serif;
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background-color: #eeeeee;
+        display: flex;
+
+        >div {
+            flex: 1;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        .user {
+            text-align: right;
+        }
+
+        .el-dropdown-link {
+            cursor: pointer;
+            color: #409eff;
+        }
+
+        .el-icon-arrow-down {
+            font-size: 12px;
+        }
+    }
+
+    .container {
+        min-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        margin-top: 60px;
+    }
+
+    .menu-nav {
+        float: left;
+        transition: $moreTime width;
+        -webkit-transition: $moreTime all;
+        -moz-transition: $moreTime width;
+        -o-transition: $moreTime width;
+        // position: fixed;
+        // top: 0;
+        // background: rgb(50, 61, 80);
+        // box-shadow: 0 16px 28px -12px rgba(0, 0, 0, .56), 0 4px 25px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+        position: relative;
+        height: 100%;
+
+        .btn-collapse {
+            position: absolute;
+            top: 50%;
+            right: 1px;
+            z-index: 666;
+            background-color: #409EFF;
+            color: #fff;
+            width: 26px;
+            text-align: center;
+            height: 26px;
+            line-height: 26px;
+            border-radius: 3px;
+
+            .btn {
+                font-size: 16px;
+
+                ::v-deep .el-radio-button__inner {
+                    padding: 4px 6px;
+                }
+            }
+        }
+    }
+
+    .el-menu-left:not(.el-menu--collapse) {
+        width: 160px;
+        min-height: 600px;
+    }
+
+    .el-menu-left {
+        height: calc(100vh - 60px);
+
+        ::v-deep .el-submenu .el-menu-item {
+            min-width: 160px;
+        }
+    }
+
+    // .app-main {
+    //     float: left;
+    //     position: relative;
+    //     height: calc(100vh - 80px);
+    //     overflow-y: auto;
+    //     padding: 10px 20px;
+    // }
+}
+
+// 查看详情弹窗样式
+.dialog-content {
+    height: 300px;
+
+    .el-row {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .grid-content {
+        font-size: 14px;
+        height: 19px;
+        line-height: 19px;
+        padding-bottom: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #333333;
+    }
+}
